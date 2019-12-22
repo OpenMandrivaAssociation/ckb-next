@@ -81,7 +81,6 @@ supports much of the same functionality, including full RGB animations.
 %__install -Dpm 0644 %{SOURCE1} %{buildroot}%{_datadir}/appdata/ckb-next.appdata.xml
 %__install -Dpm 0644 %{SOURCE2} %{buildroot}%{_mandir}/man1/ckb-next.1
 %__install -Dpm 0644 %{SOURCE3} %{buildroot}/%{_presetdir}/99-ckb-next.preset
-%__install -Dpm 0644 %{SOURCE4} README.install.urpmi
 appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/ckb-next.appdata.xml
 
 %post
