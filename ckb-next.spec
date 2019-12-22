@@ -23,6 +23,7 @@ BuildRequires:  cmake(Qt5Widgets)
 BuildRequires:  quazip-devel
 BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(gudev-1.0)
+BuildRequires:  pkgconfig(udev)
 BuildRequires:  pkgconfig(appindicator-0.1)
 BuildRequires:  pkgconfig(systemd)
 BuildRequires:  pkgconfig(libpulse)
