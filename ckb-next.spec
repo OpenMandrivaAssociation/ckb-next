@@ -1,9 +1,8 @@
 Name:           ckb-next
 Version:        0.4.2
-Release:        %mkrel 1
+Release:        1
 Summary:        Corsair RGB keyboard driver for Linux and OS X
 Group:          System/Configuration
-#bundled kissfft library is BSD
 License:        GPLv2 and BSD
 
 URL:            https://github.com/ckb-next/ckb-next
@@ -13,15 +12,14 @@ Source0:        https://github.com/ckb-next/ckb-next/archive/v%{version}/%{name}
 Source1:        ckb-next.appdata.xml
 Source2:        ckb-next.1
 Source3:        99-ckb-next.preset
-Source4:        README.install.urpmi
 
 Patch0:         ckb-next-0.4.2-fix-daemon-path.patch
 
 BuildRequires:  cmake
-BuildRequires:  cmake(Qt5Core) >= 5.3
-BuildRequires:  cmake(Qt5Gui) >= 5.3
-BuildRequires:  cmake(Qt5Network) >= 5.3
-BuildRequires:  cmake(Qt5Widgets) >= 5.3
+BuildRequires:  cmake(Qt5Core)
+BuildRequires:  cmake(Qt5Gui)
+BuildRequires:  cmake(Qt5Network)
+BuildRequires:  cmake(Qt5Widgets)
 BuildRequires:  quazip-devel
 BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(gudev-1.0)
