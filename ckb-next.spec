@@ -49,6 +49,7 @@ supports much of the same functionality, including full RGB animations.
 %{_bindir}/*
 %{_libexecdir}/%{name}-*
 #{_unitdir}/ckb-next-daemon.service
+/usr/lib/systemd/system/ckb-next-daemon.service
 %{_presetdir}/99-ckb-next.preset
 %{_datadir}/applications/ckb-next.desktop
 #{_datadir}/appdata/ckb-next.appdata.xml
