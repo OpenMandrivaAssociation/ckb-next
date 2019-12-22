@@ -13,7 +13,7 @@ Source1:        ckb-next.appdata.xml
 Source2:        ckb-next.1
 Source3:        99-ckb-next.preset
 
-Patch0:         ckb-next-0.4.2-fix-daemon-path.patch
+Patch0:         ckb-next-0.4.2-fix-daemon.patch
 
 BuildRequires:  cmake
 BuildRequires:  cmake(Qt5Core)
