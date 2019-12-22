@@ -9,7 +9,7 @@ URL:            https://github.com/ckb-next/ckb-next
 Source0:        https://github.com/ckb-next/ckb-next/archive/v%{version}/%{name}-%{version}.tar.gz
 
 # Upstream provides none of the following files
-Source1:        ckb-next.appdata.xml
+#Source1:        ckb-next.appdata.xml
 Source2:        ckb-next.1
 Source3:        99-ckb-next.preset
 
@@ -53,7 +53,7 @@ supports much of the same functionality, including full RGB animations.
 %{_unitdir}/ckb-next-daemon.service
 %{_presetdir}/99-ckb-next.preset
 %{_datadir}/applications/ckb-next.desktop
-%{_datadir}/appdata/ckb-next.appdata.xml
+#{_datadir}/appdata/ckb-next.appdata.xml
 %{_iconsdir}/hicolor/*/apps/ckb-next.png
 %{_mandir}/man1/*
 %{_udevrulesdir}/*.rules
@@ -78,7 +78,7 @@ supports much of the same functionality, including full RGB animations.
 
 %install
 %make_install -C build
-%__install -Dpm 0644 %{SOURCE1} %{buildroot}%{_datadir}/appdata/ckb-next.appdata.xml
+#__install -Dpm 0644 %{SOURCE1} %{buildroot}%{_datadir}/appdata/ckb-next.appdata.xml
 %__install -Dpm 0644 %{SOURCE2} %{buildroot}%{_mandir}/man1/ckb-next.1
 %__install -Dpm 0644 %{SOURCE3} %{buildroot}/%{_presetdir}/99-ckb-next.preset
 appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/ckb-next.appdata.xml
