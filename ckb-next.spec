@@ -33,8 +33,6 @@ BuildRequires:  desktop-file-utils
 BuildRequires:  appstream-util
 BuildRequires:  imagemagick
 
-Obsoletes:      ckb
-
 Requires(post):   rpm-helper >= %{rpmhelper_required_version}
 Requires(preun):  rpm-helper >= %{rpmhelper_required_version}
 Requires(postun): rpm-helper >= %{rpmhelper_required_version}
@@ -47,10 +45,10 @@ supports much of the same functionality, including full RGB animations.
 
 %files
 %license LICENSE
-%doc CHANGELOG.md FIRMWARE README.md README.install.urpmi
+%doc CHANGELOG.md FIRMWARE README.md
 %{_bindir}/*
 %{_libexecdir}/%{name}-*
-%{_unitdir}/ckb-next-daemon.service
+#{_unitdir}/ckb-next-daemon.service
 %{_presetdir}/99-ckb-next.preset
 %{_datadir}/applications/ckb-next.desktop
 #{_datadir}/appdata/ckb-next.appdata.xml
