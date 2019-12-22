@@ -21,6 +21,7 @@ BuildRequires:  cmake(Qt5Gui)
 BuildRequires:  cmake(Qt5Network)
 BuildRequires:  cmake(Qt5Widgets)
 BuildRequires:  quazip-devel
+BuildRequires:  qmake5
 BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(gudev-1.0)
 BuildRequires:  pkgconfig(udev)
