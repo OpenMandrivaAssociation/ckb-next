@@ -29,7 +29,7 @@ BuildRequires:  pkgconfig(libpulse)
 BuildRequires:  pkgconfig(zlib)
 BuildRequires:  desktop-file-utils
 BuildRequires:  appstream-util
-BuildRequires:  ImageMagick
+BuildRequires:  imagemagick
 
 Obsoletes:      ckb
 
